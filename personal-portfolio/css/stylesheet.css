@@ -1,0 +1,73 @@
+body,html{
+    height: 100%;
+}
+
+body{
+    background-image: url(/images/mee/20220622_111434.jpg);
+
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	-webkit-background-size: cover; /* the next 3 lines are "browser prefixes", they are necessary to include for CSS3 techniques */
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#container{
+    background-color: #9be0ff;
+    
+    width:645px;
+    padding: 15px;
+}
+
+h2{
+    background-color: #FB9A40;
+    color: #1C0A00;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'karla';
+}
+
+p{
+    font-family:'Nunito';
+    color: 	#0818A8;
+}
+
+
+/* 
+
+Project Name: Cookie Monster 
+Client: Cookie Monster
+Author: KayGee | www.twitter.com/kg_siddharth | 
+Developed @ One Month in MAA 
+
+*/
+
+
+
+h1{
+    color: #264248;
+	font-size: 80px;
+    font-family: 'Expletus Sans';
+   
+}
+
+
+
+#a1{
+	color: 	#4169E1;
+	text-decoration: none;
+}
+#a2{
+    color:#E4405F;
+    text-decoration: none;
+}
+
+#p1{
+    color:red;
+}
+
+#p2{
+    text-align: center;
+}
