@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+    <style>
+    footer{
+        text-align: center;
+    }
+
+    body{
+        background-color: #f5ea50;
+        font-family: 'Cambria';
+    }
+    </style>
+
+</head>
+<body>
+<header>
+    <img src="./ITEATRIBEE (3).PNG" alt="ITea-tribe logo" width="150">
+</header>
+    <center><h2>Monthly Tribe Meet Registration</h2></center>
+    <form action="mailto:iteatribeofficial@gmail.com?subject=Hey I want to attend the Tribe Meet." method="post" onsubmit="reg()"  enctype="text/plain">
+        <fieldset>
+            <legend>Register !</legend>
+        <table>
+            <tr>
+                <td><label for="name">How do we call You ?</label></td>
+                <td><input type="text" name="name" id="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">How to reach you ?</label></td>
+                <td><input type="email" name="email" id="email" required placeholder="Email"></td>
+            </tr>
+            <tr>
+                <td><label for="mobnumber">How to reach you quickly ?</label></td>
+                <td><input type="tel" name="mobnumber" id="mobnumber" required placeholder="Mob.No"></td>
+            </tr>
+            <tr>
+                <td><label for="age">How many years are you living ?</label></td>
+                <td><input type="number" name="age" id="age"  min="16" placeholder="Minumum 16"></td>
+            </tr>
+            <!-- <tr>
+                <td><label for="date">Choose Date</label></td>
+                <td><input type="date" name="date" id="date" required></td>
+            </tr> -->
+            <tr>
+                <td><label for="questions">Questions to discuss ?</label></td>
+                <td><input type="textarea" name="questions" id="questions"></td>
+            </tr>
+            <tr>
+                <td><label for="Consent">Shall we reach you via whatapp ?</label></td>
+                <td><input type="text" id="consent" name="consent">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="reset" value="Clear"></td><br><br>
+                <td><input type="submit" value="Register" ></td>
+            </tr>
+
+        </table>
+
+    </fieldset>
+    <script>
+        function reg()
+        {
+            console.log("Done");
+            var p =  document.getElementById('age');
+            console.log("var created");
+            if(p < 16)
+            {
+                console.log("In If condition");
+                alert("Form is not filled as per standard");
+            }
+            else{
+                console.log("In else part");
+                alert("Registered. Will meet soon");
+            }
+        }
+        
+        </script>
+    </form>
+   <br><br>
+    <footer> <b>&#169; ITea Tribe Pvt. Ltd.</b></footer>
+</body>
+</html>
